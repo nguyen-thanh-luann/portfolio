@@ -1,0 +1,39 @@
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  section {
+    text-align: center;
+
+    .name {
+      color: orange;
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .desc {
+      font-size: 1.3rem;
+      width: 80%;
+      margin: auto;
+      margin-top: 1rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    section {
+      .name {
+        font-size: 2rem;
+      }
+      .desc {
+        font-size: 1rem;
+        width: 100%;
+
+        margin-top: 1rem;
+      }
+    }
+  }
+}

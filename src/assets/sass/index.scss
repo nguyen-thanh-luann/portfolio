@@ -1,0 +1,16 @@
+@import 'Header';
+@import 'HomeScreen';
+@import 'AboutScreen';
+@import 'ProjectScreen';
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+body {
+  margin: 0;
+}
+
+.line {
+  content: '';
+  width: 80%;
+  border-bottom: 2px solid #ccc;
+  margin: auto;
+  margin-top: 1rem;
+}

@@ -1,0 +1,115 @@
+.about {
+  padding-top: 4rem;
+  background-color: #000;
+  section {
+    height: 80vh;
+    min-height: max-content;
+    display: block;
+    color: white;
+    .title {
+      margin: 0;
+      padding: 1rem 0;
+      font-size: 4rem;
+      text-align: center;
+      color: orange;
+      text-transform: capitalize;
+    }
+    .overview {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .info {
+        display: flex;
+
+        .info-detail {
+          padding-right: 4rem;
+          p {
+            font-weight: bold;
+
+            span {
+              color: #ccc;
+            }
+          }
+        }
+      }
+
+      .achievement {
+        display: flex;
+        flex-wrap: wrap;
+        .achive {
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          padding: 1rem;
+          flex: 50%;
+          width: 4rem;
+          margin-top: 1rem;
+          span {
+            color: orange;
+            font-size: 2rem;
+          }
+          p {
+            margin: 0;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .skill-group {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 5rem;
+      margin: auto;
+      background-color: #000;
+      .skill {
+        flex: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        .skill-image {
+          background-color: #2b2a2a;
+          border-radius: 50%;
+          padding: 2rem;
+          width: fit-content;
+          img {
+            width: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//mobile
+@media (max-width: 500px) {
+  .about {
+    section {
+      height: 100vh;
+      .title {
+        font-size: 2rem;
+      }
+      .overview {
+        flex-direction: column;
+
+        .info {
+          flex-direction: column;
+        }
+
+        .achievement {
+          flex-direction: column;
+
+          .achive {
+            width: 100%;
+          }
+        }
+      }
+      .skill-group {
+        .skill {
+          flex: 100%;
+        }
+      }
+    }
+  }
+}
