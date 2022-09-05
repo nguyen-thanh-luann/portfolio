@@ -82,9 +82,21 @@ export default function AboutScreen() {
             </div>
             <div className='skill'>
               <div className='skill-image'>
+                <img src={require('../assets/image/sass.jpg')} alt='' />
+              </div>
+              <p>SASS</p>
+            </div>
+            <div className='skill'>
+              <div className='skill-image'>
                 <img src={require('../assets/image/bootstrap.jpg')} alt='' />
               </div>
               <p>BOOTSTRAP</p>
+            </div>
+            <div className='skill'>
+              <div className='skill-image'>
+                <img src={require('../assets/image/firebase.jpg')} alt='' />
+              </div>
+              <p>FIREBASE</p>
             </div>
             <div className='skill'>
               <div className='skill-image'>

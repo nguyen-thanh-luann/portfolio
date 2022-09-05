@@ -1,11 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 import { AiFillGithub, AiFillEye } from 'react-icons/ai'
+
 import Header from '../components/Header'
 export default function ProjectScreen() {
   return (
     <div>
+      <Helmet>
+        <title>Projects</title>
+      </Helmet>
       <Header />
       <div className='project'>
         <section>
